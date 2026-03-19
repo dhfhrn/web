@@ -81,3 +81,43 @@
         <td>소셜미디어 시대의 인터넷활용</td> <td>B. McLaughlin</td> <td>O'Reilly</td>
     </tr>
 </table>
+
+<table border="1">
+    <tr>
+        <td rowspan="3">아래 줄(rows)<br>셀 합치기</td> <td>1행(row) 2열 </td>
+    </tr>
+    <tr>
+        <--2행 1열 없음--><td>2행(row)2열</td>
+    </tr>
+    <tr><--3행 1열 없음--><td>3행(row)2열</td></tr>
+</table>
+
+<table border="1">
+    <tr>
+        <td colspan="3">옆 칸(cols)의 셀 합치기</td>
+    </tr>
+    <tr>
+        <td>2행 1열(col)</td><td>2행 2열(col)</td><td>2행 3열(col)</td>
+    </tr>
+</table>
+
+<table border="1">
+    <caption>과목별 추천도서</caption>
+    <thead>
+        <tr>
+            <th>과목</th> <th>책제목</th> <th>저자</th> <th>출판사</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <th>합계</th> <td colspan="3">3권</td>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td rowspan="3">웹프로그래밍</td> <td>웹프로그래밍 입문</td>
+            <td>임범순, 박희민</td> <td>생능</td>
+        </tr>
+        <tr>
+            <td>What Is HTML5?</td> <td>B. McLaughlin</td> <td>O'Reilly</td>
+        </tr>
+    </tbody>
+</table>
