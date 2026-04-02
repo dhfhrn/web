@@ -117,3 +117,108 @@
         </form>
     </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 텍스트 라벨 예제 </title>
+        <meta name="Copyright" content="임순범 외 저자">
+    </head>
+    <body>
+        <p>텍스트 라벨을 클릭해도 됩니다.<p>
+        <form method="get" action="form_app.js">
+            성별: &nbsp;
+            <label for="male">남성</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="female">여성</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <br>
+            <hr>
+            <input type="submit" value="전송"/>
+            <input type="reset" value="취소"/>
+        </form>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 그룹핑 예제 </title>
+        <meta name="Copyright" content="임순범 외 저자">
+    </head>
+    <body>
+        <h3>도서 검색</h3>
+        <form method="post" action="form_app.js">
+            <fieldset>
+                <legend>로그인</legend>
+                <label for="user_id">아이디: </label>
+                <input type="text" name="id" size="20" id="user_id"> <br>
+                <label for="user_pw">비밀번호: </label>
+                <input type="password" name="pw" size="20" id="user_pw">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>통합 검색</legend>
+                <label for="book_name">도서명: </label>
+                <input type="text" name="book_search" size="50" id="book_name">
+                <br>검색범위:
+                <input type="radio" name="s_type" value="keyword" id="keyword">
+                <label for="keyword">키워드</label>
+                <input type="radio" name="s_type" value="content" id="content">
+                <label for="content">본문 내용</label>
+                <br>자료유형:
+                <input type="checkbox" name="d_type" value="all">전체
+                <input type="checkbox" name="d_type" value="book">단행본
+                <input type="checkbox" name="d_type" value="paper">학술지
+                <input type="checkbox" name="d_type" value="non_book">비도서<br>
+            </fieldset>
+            <br>
+            <button type="submit">검색</button>
+            <button type="reset">지우기</button>
+        </form>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 텍스트 라벨 예제 </title>
+        <meta name="Copyright" content="임순범 외 저자">
+    </head>
+    <body>
+        <form>
+            <p>Email: <input type="email"/><br>
+            <p><input type="submit" value="전송"/>
+            <p>URL: <input type="url" value="http://"/><br>
+            <p><input type="submit" value="전송"/>
+            <p>Tel: <input type="tel" placeholder="00*-000*-0000"
+                pattern="[0-9]{2,3}-[0,9]{3,4}-[0,9]{4}" /><br>
+            <p><input type="submit" value="전송" />
+            <p>Search: <input type="search" placeholder="Search..."/> <br>
+            <p><input type="submit" value="전송" />
+        </form>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 날짜 입력 예제 </title>
+        <meta name="Copyright" content="임순범 외 저자">
+    </head>
+    <body>
+        <form method="get" action="form_app.js">
+            <table width="500">
+            <tr>
+                <td>date (연-월-일)</td>
+                <td>month (연도-월)</td>
+                <td>week (연도-주)</td>
+            </tr><tr>
+                <td><input type="date"> </td>
+                <td><input type="month"> </td>
+                <td><input type="week"> </td>
+            </tr>
+            </table>
+        </form>
+    </body>
+</html>
