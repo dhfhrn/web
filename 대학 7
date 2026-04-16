@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Copyright" content="임순범 외 저자">
+        <title>가상클래스 선택자</title>
+        <style type="text/css">
+            p {font-size: 10pt;}
+            a:link{color: blue}
+            a:visited {color:green}
+            p::first-letter {font-size: 12pt; background-color: sliver;}
+            h3::before {content: "•"; color:black}
+            h3::after {content:"(©sblin)"; font-size: 10pt;}
+        </style>
+    </head>
+    <body>
+        <h3><strong>스타일시트</strong>이해하기</h3>
+        <p>이 예제는 <strong>CSS</strong>의 개념을 설명합니다.</p>
+        <p>선택자에 <a href="">가상 클래스</a>와 <a href="">선택자 조합</a>을 적용하여 스타일을 지정합니다</p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Copyright" content="임순범 외 저자">
+        <title>선택자 조합하기</title>
+        <style type="text/css">
+            p {font-size: 10pt;}
+            h3::after {content:"(©sblin)"; font-size: 10pt;}
+            h3 strong {font-style: italic;}
+            p strong {color: red;}
+            p strong {color: blue;}
+            h3 + p {font-style: italic;}
+        </style>
+    </head>
+    <body>
+        <h3><strong>스타일시트</strong>이해하기</h3>
+        <p>이 예제는 <span id="test"><strong>CSS</strong>의 개념</span>을 설명합니다.
+        <br><a href="">가상클래스</a>와 <a href="">선택자조합</a>으로 스타일을 지정합니다.</p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta name="Copyright" content="임순범 외 저자">
+        <title>폰트 관련 속성</title>
+        <style type="text/css">
+            h3 {font-family: "맑은고딕" "돋움" sans-serif; color: red;}
+            h3::after {content: "(©sblim)"; font-size: 10pt;}
+            #x-small {font-size: x-small;}
+            #small {font-size: small;}
+            #medium {font-size: medium;}
+            #pt12 {font-size: 12pt;}
+            #large {font-size: large;}
+            #x-large {font-size: x-large;}
+            #bolder {font-weight: bolder;}
+            #bold {font-weight: bold;}
+            #normal {font-weight: noraml;}
+            #lighter {font-weight: lighter;}
+            #italic {font-style: italic;}
+            #oblique {font-style: oblique;}
+            #v-normal {font-variant: normal;}
+            #small-caps {font-variant: small-caps;}
+        </style>
+    </head>
+    <body>
+        <h3>CSS 폰트 속성</h3>
+        <p>font-size : <span id="x-small"> x-small </span>,
+                    <span id="small"> small </span>
+                    <span id="medium"> medium </span>
+                    <span id="pt12"> 12pt </span>
+                    <span id="large"> large </span>
+                    <span id="x-large"> x-large </span>
+        <p>font-weight : <span id="bolder"> bolder </span>
+                    <span id="bold"> bold </span>
+                    <span id="noraml"> normal </span>
+                    <span id="lighter"> lighter </span>
+        <p>font-style : <span id="italic"> italic </span>
+                    <span id="oblique"> oblique(경사체) </span>
+        <p>font-variant : <span id="v-normal"> CSS normal , </span>
+                        <span id="small-caps"> CSS small-caps , </span>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Copyright" content="임순범 외 저자">
+        <title>문자 관련 속성</title>
+        <style type="text/css">
+            h3 {font-family: "맑은고딕" "돋움" sans-serif; color: red; text-shadow: 3px 3px 4px grey;}
+            h3::after {content: "(©sblim)"; font-size: 10pt; text-shadow: 1px 1px 12px lime;}
+            p {font-family: "Times New Roman" "돋움" serif; line-height: 10pt;}
+            #first {text-align: left; letter-spacing: 2pt; word-spacing: 10pt;}
+            #second {text-align: left; letter-spacing: 2pt; word-spacing: 2pt;}
+            #thrid { text-align: right;}
+            #fourth {text-align: center;}
+            #under {text-decoration: underline;}
+            #over {text-decoration: overline;}
+            #thru {text-decoration: line-through;}
+            #cap {text-transform: capitalize;}
+            #upper {text-transform: uppercase;}
+            #lower {text-transform: lowercase;}
+        </style>
+    </head>
+    <body>
+        <h3><strong>CSS</strong> 문자관련 속성</h3>
+        <p id="first">왼쪽정렬, 문자간격 3pt, 단어간격 8pt </p>
+        <p id="second">왼쪽정렬, 들여쓰기 2글자, 문자간격 -2pt, 단어간격 2pt</p>
+        <p id="third">오른쪽정렬, text-decoration : <span id="under"> underline </span>
+            <span id="over"> overline </span>, <span id="thru"> line-through </span></p>
+        <p id="fourth">가운데정렬, text-transform : <span id="cap"> capitalize </span>
+        <span id="upper"> uppercase </span>, <span id="lower"> lowercase </span></p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Copyright" content="임순범 외 저자">
+        <title>배경관련 속성</title>
+        <style type="text/css">
+            h3 {color: red; background-color: #90ff90;}
+            h3::after {content: "(©sblim)"; font-size: 10pt;}
+            #first {background-image: url(); background-repeat: repeat-x;}
+            #second {background-image: url();}
+            #third {background-image: url(); background-repeat: no-repeat; background-position: center bottom;}
+        </style>
+    </head>
+    <body>
+        <h3>CSS 배경관련 속성</h3>
+        <table border="1">
+        <tr>
+            <td id="first">배경 이미지<br>&bull;url(파일경로) <br><br>&bull; background-repeat : <br>&bull; => repeat-x</td>
+            <td id="second">배경 이미지<br>&bull;url(파일경로) <br><br>&bull; background-repeat : <br>&bull; => repeat-x</td>
+            <td id="third">배경 이미지
+        </td>
+        <table>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Copyright" content="임순범 외 저자">
+        <title>영역 확인하기</title>
+        <style type="text/css">
+            p {font-size: 10pt;}
+            h3 {color: red; background-color: #90ff90;}
+            h3::after {content: "(©sblim)"; font-size: 10pt; background-color: yellow;}
+            strong red1 {background-color: #B0ffff;}
+        </style>
+    </head>
+    <body>
+        <h3><strong>스타일시트</strong> 이해하기</h3>
+        <p>이 예제는 <strong>박스모델</strong>의 개념을 설명합니다.
+        <br><span class="red1">클래스</span>와 ID로 스타일을 지정합니다.</p>
+        <p id="next">다음 예제로 이어집니다.</p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Copyright" content="임순범 외 저자">
+        <title>박스모델 확인</title>
+        <style type="text/css">
+            p {font-size: 10pt; line-height: 24pt;}
+            h3 {color: red; background-color: #90ff90; margin-left: 60px; margin-right: 60px;}
+            h3::after {content: "(©sblim)"; font-size: 10pt;}
+            p {background-color: #B0ffff;padding: 10px; border: medium dotted red;}
+            #next {line-height: 12pt; margin-left: 30%; padding: 8px; border: 4px inset green;}
+            strong red1 {background-color: silver; margin:  10px; padding: 6px; border: 1px solid black;}
+        </style>
+    </head>
+    <body>
+        <h3><strong>스타일시트</strong>이해하기</h3>
+        <p>이 예제는 <strong>박스모델</strong>의 개념을 설명합니다.
+        <br><span class="red1">클래스</span>와 ID 스타일을 지정합니다.</p>
+        <p id="next">다음 예제로 이어집니다.</p>
+    </body>
+</html>
+
